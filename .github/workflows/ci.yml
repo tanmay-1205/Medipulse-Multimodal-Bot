@@ -24,7 +24,7 @@ jobs:
 
       - name: Test Code
         run: |
-          pytest "./AIMedicalBot-main/AIMedicalBot-main/test_stt_img_ot.py"
+          pytest 
         env:
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
-          
+
