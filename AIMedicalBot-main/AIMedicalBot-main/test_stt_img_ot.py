@@ -7,7 +7,7 @@ from voice_of_the_doctor import text_to_speech_with_gtts
 def test_end_to_end_flow():
     # Step 1: Set up test files
     test_audio_path = "AIMedicalBot-main\AIMedicalBot-main\patient_voice_test.mp3"  # You should have a pre-recorded test audio file
-    test_image_path = "AIMedicalBot-main/AIMedicalBot-main/acne.jpg"  # You should have a test image with some visible skin condition
+    test_image_path = "AIMedicalBot-main/AIMedicalBot-main/skin_rash.jpg"  # You should have a test image with some visible skin condition
     output_speech_path = "test_output.mp3"
     
     # Step 2: Test speech-to-text
