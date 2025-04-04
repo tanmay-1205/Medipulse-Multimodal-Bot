@@ -1,4 +1,4 @@
-name: Test Python code
+name: Test Python Code
 
 on:
   push:
@@ -18,10 +18,12 @@ jobs:
           python-version: "3.11"
 
       - name: Install Deps
-        runs: |
-          pip install -r AIMedicalBot-main/AIMedicalBot-main/requirements.txt
+        run: |
+          pip install -r requirements.txt
           pip install pytest
 
       - name: Test Code
-        runs: |
+        run: |
           pytest
+        env:
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
